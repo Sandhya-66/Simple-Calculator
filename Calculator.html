@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .calculator {
+      width: 500px; 
+      padding: 20px;
+      border-radius: 20px;
+      background-color: black;
+      border: 4px solid #333;
+      margin: 30px;
+      box-shadow: 0 0 20px #444;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px; 
+    }
+
+    button {
+      height: 55px; 
+      width: 100%;
+      font-size: 1.4em;
+      border: none;
+      border-radius: 28px;
+      color: white;
+      background-color: #1C1C1C;
+      transition: filter 0.2s;
+    }
+
+    button:hover {
+      filter: brightness(1.2);
+      cursor: pointer;
+    }
+
+    .grey {
+      background-color: #A5A5A5;
+      color: black;
+    }
+
+    .orange {
+      background-color: #FF9500;
+      color: white;
+    }
+
+    .icon-btn img {
+      width: 24px;
+      height: 24px;
+      filter: brightness(10);
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="buttons">
+     
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="grey">AC</button>
+      <button class="orange">÷</button>
+
+     
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="grey">+/-</button>
+      <button class="orange">×</button>
+
+     
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="grey">%</button>
+      <button class="orange">−</button>
+
+     
+      <button class="icon-btn">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/calculator.png" alt="Calc" />
+      </button>
+      <button>0</button>
+      <button>.</button>
+      <button class="orange">=</button>
+      <button class="orange">+</button>
+    </div>
+  </div>
+</body>
+</html>
